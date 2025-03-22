@@ -1,0 +1,49 @@
+.categories {
+    margin-top: 30px;
+}
+
+.categories nav {
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+.category-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.category-list li {
+    display: flex;
+    align-items: center;
+}
+
+.category {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    bottom: -5px; 
+    z-index: 5;
+}
+
+.category::after {
+    content: none; 
+}
+
+.category:hover {
+    color: #2581EB;
+}
+
+.category img {
+    height: 40px;
+    width: 40px;
+    transition: filter 0.3s ease; 
+}
+
+.category:hover img {
+    filter: brightness(0) saturate(100%) invert(39%) sepia(98%) saturate(748%) hue-rotate(183deg) brightness(93%) contrast(91%);
+}

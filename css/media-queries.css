@@ -1,0 +1,148 @@
+@media (max-width: 960px) {
+    body {
+        margin-left: 20px; 
+    }
+
+    nav {
+        flex-direction: row; 
+        align-items: center; 
+        gap: 10px; 
+    }
+
+    .logo img {
+        width: 120px;
+        height: auto;
+    }
+
+    .desktop-menu {
+        display: none; 
+    }
+
+    .close-icon {
+        font-size: 24px;
+        color: #333;
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        transition: opacity 0.3s ease;
+        line-height: 40px; 
+        text-align: center; 
+    }
+
+    .close-menu-button {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex; 
+        z-index: 7;
+        transform: translateX(100px);
+    }
+
+    .burger-menu:not(.active):hover .burger-icon {
+        content: url('../img/Nav 1.png');
+    }
+
+
+    .desktop-menu img,
+    .mobile-menu img {
+        display: none; 
+    }
+
+    .mobile-menu {
+        flex-direction: column;
+        align-items: center; 
+        text-align: center; 
+        
+    }
+
+    .mobile-menu.active {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    #mobile-popup-button {
+        display: none;
+    }
+
+
+    .clickable-icon {
+        display: flex; 
+        transform: translateX(320px);
+    }
+
+    .header-right {
+        margin-right: 0; 
+        transform: translateX(100%);
+    }
+
+    .hero {
+        min-height: 105vh;
+    }
+
+    .hero-content h2 {
+        transform: translate(0, -5%);
+    }
+
+    .hero-content h3 {
+        transform: translate(-83%, 60%); 
+    }
+
+    .hero-image.duck {
+        width: 500px;
+        height: 500px;
+    }
+
+    .hero-image.krya {
+        width: 120px;
+        height: 110px; 
+        transform: translate(-50%, -30%);
+    }
+
+    .hero-images {
+        transform: translate(40%, -7%); 
+    }
+
+    .hero-content p {
+        top: 290px; 
+        transform: translateX(-125%); 
+    }
+
+    .hero-content #cta-button {
+        top: 350px; 
+        transform: translateX(-290%); 
+    }
+
+    .popup-content {
+        padding: 20px; 
+        max-width: 280px; 
+    }
+
+    .popup-content label {
+        margin-left: 10px;
+    }
+
+    .categories {
+        position: relative;
+        top: -170px;
+        left: -30px;
+    }
+    .categories nav {
+        flex-direction: row; 
+        align-items: center; 
+    }
+
+    .category-list {
+        flex-direction: row; 
+        gap: 10px; 
+    }
+
+    .close {
+        padding-right: 15px;
+        padding-top: 15px;
+    }
+
+}

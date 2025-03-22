@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин уточек</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/media-375.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/Logo.png" alt="Логотип">
+            </div>
+            <ul class="desktop-menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <img src="img/Icon.png" alt="Иконка">
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <img src="./img/Button Icons.png" alt="Иконка2" id="clickable-icon" class="clickable-icon">
+            <div class="header-right">
+                <button id="header-button">Заказать обратный звонок</button>
+            </div>
+
+        <div class="burger-menu" id="burger-menu">
+            <img src="img/Nav.png" alt="Меню" class="burger-icon">
+            <span class="close-icon">&times;</span>
+        </div>
+
+        <ul class="nav-menu mobile-menu" id="mobile-menu">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <img src="img/Icon.png" alt="Иконка">
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li>
+                <button id="mobile-popup-button">Заказать обратный звонок</button>
+            </li>
+        </ul>
+        <div class="overlay"></div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>МНОГО</h2>
+                <h3>УТОЧЕК</h3>
+                <div class="hero-images">
+                    <img src="img/Кря.png" alt="Кря" class="hero-image krya">
+                    <img src="img/Image.png" alt="Уточка" class="hero-image duck">
+                </div>
+                <p>Маленький друг найдётся для каждого в этом кряжевню жёлтом мире</p>
+                <button id="cta-button">Смотреть уточек</button>
+            </div>
+        </section>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <form>
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" placeholder="Введите ваше имя" required>
+        
+                    <label for="email">Телефон</label>
+                    <input type="email" id="email" placeholder="+7 000 000 00 00" required>
+
+                    <button type="submit">Отправить</button>
+
+                    <p>Нажимая кнопку “Отправить”, вы соглашаетесь с 
+                        <a href="#" target="_blank">политикой конфиденциальности</a> и 
+                        <a href="#" target="_blank">договором оферты</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <section class="categories">
+        <nav>
+            <ul class="category-list">
+                <li><a href="#" class="category">
+                    <img src="img/arrow.png" alt="Иконка">
+                    Классические
+                </a></li>
+                <li><a href="#" class="category">
+                    <img src="img/arrow.png" alt="Иконка">
+                    Уточки панки
+                </a></li>
+                <li><a href="#" class="category">
+                    <img src="img/arrow.png" alt="Иконка">
+                    Супергерои
+                </a></li>
+                <li><a href="#" class="category">
+                    <img src="img/arrow.png" alt="Иконка">
+                    Милые
+                </a></li>
+                <li><a href="#" class="category">
+                    <img src="img/arrow.png" alt="Иконка">
+                    Для детей
+                </a></li>
+                <li><a href="#" class="category">
+                    <img src="img/arrow.png" alt="Иконка">
+                    Взрослым
+                </a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

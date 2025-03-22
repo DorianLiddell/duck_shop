@@ -1,0 +1,102 @@
+.hero {
+    flex-grow: 1;
+    position: relative;
+    text-align: center;
+    min-height: 72vh;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h2 {
+    text-align: left;
+    font-size: 152px;
+    margin: 0;
+    color: #333;
+    font-family: 'Jura', sans-serif; 
+    font-weight: 700; 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    transform: translate(0, -10%); 
+}
+
+.hero-content h3 {
+    text-align: right;
+    font-size: 152px;
+    margin: 0;
+    color: #333;
+    font-family: 'Jura', sans-serif; 
+    position: absolute; 
+    top: 0; 
+    left: 50%; 
+    transform: translate(1%, 40%); 
+}
+
+.hero-image.duck {
+    width: 500px;
+    height: 550px;
+}
+
+.hero-image.krya {
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    transform: translate(-40%, -10%);
+    top: 200px;
+    left: 0; 
+    right: auto;
+    bottom: auto;
+}
+
+.hero-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -5%);
+    z-index: 2;
+}
+
+.hero-content p {
+    text-align: left;
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+    position: relative;
+    top: 240px;
+    left: 50%;
+    transform: translateX(35%);
+    width: 80%; 
+    max-width: 360px; 
+    line-height: 1.5; 
+    font-family: 'Inter', sans-serif; 
+    font-weight: 400; 
+}
+
+.hero-content #cta-button {
+    width: 156px;
+    height: 38px;
+    font-size: 15px;
+    color: white;
+    background-color: #2581EB;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(80%);
+    font-family: 'Inter', sans-serif; 
+    font-weight: 500; 
+    z-index: 3;
+}
+
+.hero-content #cta-button:hover {
+    background-color: #439FFF;
+}
